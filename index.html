@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 	<!--linkeo mi css-->
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<link rel="icon" type="image/ico" href="assets/img/favicon.ico"/>
+	<link rel="icon" type="image/ico" href="assets/img/favicon.ico" />
 	<title>Diseño de Muebles</title>
 </head>
-<body>
-	<header>
 
-	<a href="#"><img class="navLogo" src="assets/img/logo-blanco.svg" alt="logo empresa"></a>
-			<nav>
-				
-				<ul> 
-					<li><a href="#">Home</a></li>
-					<li><a href="pages/quienessomos.html">¿Quiénes somos?</a></li>
-					<li><a href="pages/servicio.html">Servicios</a></li>
-					<li><a href="pages/contacto.html">Materiales y Estilos</a></li>
-					<li><a href="pages/contacto.html">Contáctanos</a></li>
+<body>
+	<header>		
+		<nav class="navbar navbar-expand-lg bg-light">
+			<div class="container-fluid">
+				<a href="#"><img class="navLogo" src="assets/img/logo-color.svg" alt="logo empresa"></a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="pages/quienessomos.html">Quienes somos</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="pages/servicio.html">Servicios</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="pages/materiales.html">Materiales y Estilos</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="pages/contacto.html">Contáctanos</a>
+				  </li>
 				</ul>
-			</nav>
+			  </div>
+			</div>
+		  </nav>
 	</header>
 	<main>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 		<section class="heroSection">
 			<div class="heroText">
 				<h1>Diseño y tendencias de muebles</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus, lacus nec placerat dictum, libero</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus, lacus nec placerat dictum,
+					libero</p>
 				<a href="pages/contacto.html"> Quiero más información</a>
 			</div>
-		
+
 		</section>
 		<section class="textSection">
 			<div>
 				<h1 class="textTitle">¿Qué hacemos?<h1>
-				<p class="textDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur diam sollicitudin lorem lacinia, vitae vehicula nisl varius. Aliquam porttitor eu est ut rhoncus. Proin in rhoncus lacus. Proin eu feugiat eros, vel rhoncus nibh. Nullam sodales vel nisl ac aliquam. Praesent pulvinar cursus nulla nec imperdiet. Aliquam lacinia rhoncus sagittis. Vestibulum mauris leo, congue at dictum vel, molestie ut sapien. Sed dictum eros vel lacinia euismod.</p>
-				<a href="pages/quienessomos.html">Ver más</a>
+						<p class="textDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+							consectetur diam sollicitudin lorem lacinia, vitae vehicula nisl varius. Aliquam porttitor
+							eu est ut rhoncus. Proin in rhoncus lacus. Proin eu feugiat eros, vel rhoncus nibh. Nullam
+							sodales vel nisl ac aliquam. Praesent pulvinar cursus nulla nec imperdiet. Aliquam lacinia
+							rhoncus sagittis. Vestibulum mauris leo, congue at dictum vel, molestie ut sapien. Sed
+							dictum eros vel lacinia euismod.</p>
+						<a href="pages/quienessomos.html">Ver más</a>
 			</div>
-			<img src="assets/img/image1-home.png">			
+			<img src="assets/img/image1-home.png">
 		</section>
 		<section class="featureSection">
 			<div>
@@ -58,32 +80,34 @@
 			<h2>Servicios</h2>
 			<div class="serviceBg">
 				<div class="serviceText">
-					
+
 					<h3>Personalización de muebles</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu enim est. Suspendisse consectetur lacus ut vulputate fermentum. Nulla facilisi.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu enim est. Suspendisse
+						consectetur lacus ut vulputate fermentum. Nulla facilisi.</p>
 					<a href="pages/servicio.html">Ver más</a>
 				</div>
 			</div>
 		</section>
 		<section class="contactSection">
 			<h1>Contáctanos</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu enim est. Suspendisse consectetur lacus ut vulputate fermentum. </p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu enim est. Suspendisse consectetur
+				lacus ut vulputate fermentum. </p>
 			<div class="formContact">
 				<div>
 					<label for="name">Nombre:</label>
-					<input type="text" name="name" id="name"placeholder="Tu nombre">
+					<input type="text" name="name" id="name" placeholder="Tu nombre">
 				</div>
 				<div>
 					<label for="email">Email:</label>
-					<input type="email" name="email" id="email"placeholder="ejemplo@email.com">
+					<input type="email" name="email" id="email" placeholder="ejemplo@email.com">
 				</div>
 				<div>
-					<label for="tel" >Teléfono:</label>
-					<input type="tel" name="tel"id="tel" placeholder="55555555">
+					<label for="tel">Teléfono:</label>
+					<input type="tel" name="tel" id="tel" placeholder="55555555">
 				</div>
 				<div>
 					<label>Mensaje:</label>
-					<textarea placeholder="Escribe tu mensaje" name="message" id="message"></textarea>		
+					<textarea placeholder="Escribe tu mensaje" name="message" id="message"></textarea>
 				</div>
 				<a type="submit">Enviar</a>
 			</div>
@@ -103,7 +127,8 @@
 		<div>
 			<p>Copyright 2022 Sitio web</p>
 		</div>
-		
+
 	</footer>
 </body>
+
 </html>

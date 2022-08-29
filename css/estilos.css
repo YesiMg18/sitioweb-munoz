@@ -15,15 +15,11 @@ body {
 	font-family: 'Poppins';
 }
 
-header{
-	background-color: #2E2F3B;
-}
-
 footer{
 	background-color: #2E2F3B;
 	color: white;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	display: flex;
+	flex-direction: row;
 	justify-content:space-between;
 	align-items: center;
 	padding: 50px;
@@ -102,8 +98,9 @@ a{
 
 
 .textSection{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	margin: 60px;
 }
 
@@ -196,7 +193,7 @@ margin: 60px;
 	background-color: #FFFFFF;
 	color: #302E3C;
 	font-size: 16px;
-	padding: 10px 40px;
+	padding: 10px 20px;
 	border-radius: 10px;
 	width: 120px;
 	font-weight: 600;
@@ -245,7 +242,7 @@ margin: 60px;
 	margin-bottom: 14px;
 }
 
-.formContact input ,textarea{
+.formContact input{
 	background-color: none;
 	border-radius: 10px;
 	border: 1px solid #333333;
@@ -254,8 +251,14 @@ margin: 60px;
 	margin-bottom: 20px;
 	padding: 5px 10px;
 }
+.formContact textarea{
+	border-radius: 10px;
+	border: 1px solid #333333;
+	width: 750px;
+	height: 100px;
+}
 
-.formContact a{
+.formContact a {
 
 	background-color: #9B867B;
 	border-radius: 10px;
@@ -283,14 +286,13 @@ margin: 60px;
 }
 
 .sectionHistory{
-	
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .sectionHistory img{
-	width: 100%;
+	width: 50%;
 }
 
 .textHistory {
@@ -310,8 +312,8 @@ margin: 60px;
 }
 
 .sectionPurpose{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
+	flex-direction: row ;
 	margin: 120px ;
 }
 
@@ -352,6 +354,7 @@ margin: 60px;
 
 .infoTeam img{
 	border-radius: 70px;
+	margin-bottom: 18px;
 }
 
 .infoTeam h4{
@@ -562,3 +565,144 @@ margin: 60px;
 }
 
 
+
+/* Mediaqueries */
+
+@media only screen and (max-width: 375px){
+
+	/* Home */
+
+	.heroSection{
+		background-image: url(../assets/img/hero-home-mobile.png);
+		height: 680px;
+	}
+	.heroText{
+		padding:100px 16px;
+		text-align: center;
+	}
+	.heroText h1{
+		font-size: 32px;
+	}
+	.textSection{
+		flex-direction: column;
+		margin: 16px;
+	}
+	.textSection div{
+		margin: 40px 16px;
+		text-align: center;
+		
+	}
+	.textTitle{
+		font-size: 32px;
+	}
+
+	.featureSection{
+		grid-template-columns: 1fr ;
+	}
+	.serviceBg{
+		background-image: url(../assets/img/image2-home-mobile.png);
+		height: 580px;
+	}
+	.serviceSection h2{
+		font-size: 32px;
+	}
+
+	.serviceText{
+		text-align: center;
+		margin:100px 16px ;
+		width: auto;
+		align-items: center;
+	}
+	.serviceText h3{
+		font-size: 32px;
+	}
+	.contactSection{
+		margin: 60px 16px;
+		text-align: center;
+	}
+	.contactSection h1{
+		font-size: 32px;
+		margin-bottom: 12px;
+	}
+
+	.formContact input{
+		width: 300px;
+		height: 40px;
+	}
+	.formContact textarea {
+		width: 300px;
+	}
+	footer{
+		flex-direction: column;
+	}
+	 footer div{
+		margin-bottom: 16px;
+	 }
+
+	 /* Quienes somos */
+
+	 .titlePage{
+		font-size: 36px;
+	 }
+
+	.sectionHistory{
+		flex-direction: column;
+		align-items: center;
+	}
+	.sectionHistory img{
+		width: 90%;
+	}
+	.textHistory {
+		margin: 16px;
+		padding: 16px;
+		text-align: center;
+	}
+	
+	.textHistory h2{
+		font-size: 32px;
+	}
+	.sectionPurpose{
+		flex-direction: column;
+		margin: 24px ;
+	}
+	.textPurpose{
+		padding: 32px;
+		margin: 32px 0;
+	}
+	.textPurpose h3{
+		font-size: 28px;
+	}
+	
+	.sectionTeam{
+		margin: 60px 24px;
+	
+	}
+
+	.sectionTeam h2{
+
+		font-size:32px;
+		margin-bottom: 56px;
+	}
+	
+	.infoTeam{
+		grid-template-columns:repeat(2, 1fr);
+	}
+	.infoTeam div{
+		margin-bottom: 32px;
+	}
+	
+	.infoTeam img{
+		border-radius: 70px;
+		width: 110px;
+	}
+	
+	.infoTeam h4{
+		font-size: 14px;
+	}
+	
+
+	.infoTeam p{
+		font-size: 12px;
+		font-weight: 400;
+	}
+}
