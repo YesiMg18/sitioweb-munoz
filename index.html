@@ -4,42 +4,27 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!--linkeo mi css-->
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="icon" type="image/ico" href="assets/img/favicon.ico" />
 	<title>Diseño de Muebles</title>
 </head>
-
 <body>
-	<header>		
-		<nav class="navbar navbar-expand-lg bg-light">
-			<div class="container-fluid">
-				<a href="#"><img class="navLogo" src="assets/img/logo-color.svg" alt="logo empresa"></a>
-			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="navbar-nav">
-				  <li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="pages/quienessomos.html">Quienes somos</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="pages/servicio.html">Servicios</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="pages/materiales.html">Materiales y Estilos</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="pages/contacto.html">Contáctanos</a>
-				  </li>
-				</ul>
-			  </div>
-			</div>
-		  </nav>
+	<header>
+		<nav class="topnav" id="myTopnav">	
+			<a href="#" class="navLogo"><img src="assets/img/logo-color.svg" alt="logo empresa"></a>
+			<a href="pages/quienessomos.html">Quienes somos</a>
+			<a href="pages/servicio.html">Servicios</a>
+			<a href="pages/materiales.html">Materiales y Estilos</a>
+			<a href="pages/contacto.html">Contáctanos</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			  <i class="fa fa-bars"></i>
+			</a>
+		</nav>
 	</header>
 	<main>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+		
 		<section class="heroSection">
 			<div class="heroText">
 				<h1>Diseño y tendencias de muebles</h1>
@@ -75,6 +60,7 @@
 				<img src="assets/img/like.svg">
 				<p>Lorem ipsum dolor sit amet, consectetur</p>
 			</div>
+			
 		</section>
 		<section class="serviceSection">
 			<h2>Servicios</h2>
@@ -129,6 +115,17 @@
 		</div>
 
 	</footer>
+	<script>
+					function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += "responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+	
 </body>
 
 </html>
