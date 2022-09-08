@@ -6,21 +6,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!--linkeo mi css-->
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="icon" type="image/ico" href="assets/img/favicon.ico" />
 	<title>Diseño de Muebles</title>
+	<script src="app.js" defer></script>
 </head>
 <body>
 	<header>
-		<nav class="topnav" id="myTopnav">	
+		<nav class="menu">	
 			<a href="#" class="navLogo"><img src="assets/img/logo-color.svg" alt="logo empresa"></a>
-			<a href="pages/quienessomos.html">Quienes somos</a>
-			<a href="pages/servicio.html">Servicios</a>
-			<a href="pages/materiales.html">Materiales y Estilos</a>
-			<a href="pages/contacto.html">Contáctanos</a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-			  <i class="fa fa-bars"></i>
-			</a>
+			<ul class="menuItems">
+				<li><a href="pages/quienessomos.html">Quienes somos</a></li>
+				<li><a href="pages/servicio.html">Servicios</a></li>
+				<li><a href="pages/materiales.html">Materiales y Estilos</a></li>
+				<li><a href="pages/contacto.html">Contáctanos</a></li>
+			</ul>
+			<span class="btn_menu">
+				<i class="fa fa-bars"></i>
+			</span>
 		</nav>
 	</header>
 	<main>
@@ -36,8 +39,8 @@
 		</section>
 		<section class="textSection">
 			<div>
-				<h1 class="textTitle">¿Qué hacemos?<h1>
-						<p class="textDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+				<h1>¿Qué hacemos?<h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
 							consectetur diam sollicitudin lorem lacinia, vitae vehicula nisl varius. Aliquam porttitor
 							eu est ut rhoncus. Proin in rhoncus lacus. Proin eu feugiat eros, vel rhoncus nibh. Nullam
 							sodales vel nisl ac aliquam. Praesent pulvinar cursus nulla nec imperdiet. Aliquam lacinia
@@ -65,8 +68,7 @@
 		<section class="serviceSection">
 			<h2>Servicios</h2>
 			<div class="serviceBg">
-				<div class="serviceText">
-
+				<div>
 					<h3>Personalización de muebles</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu enim est. Suspendisse
 						consectetur lacus ut vulputate fermentum. Nulla facilisi.</p>

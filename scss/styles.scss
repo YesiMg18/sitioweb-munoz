@@ -1,0 +1,243 @@
+@import "colors";
+@import "fonts";
+
+footer{
+	background-color:$colorBackground;
+	color: $white;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	align-items: center;
+	padding: 50px;
+}
+.footerIcons{
+    img{
+        margin:  20px;  
+    }
+}
+
+.menu{
+	background-color:$white;
+	height: 75px;
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menuItems{
+    display: flex;
+	list-style: none;
+	margin-right:30px;
+    li{
+        border-radius: 5px ;
+        margin: 0 5px;   
+    }
+    a{
+        padding: 7px 13px;
+        text-decoration: none;
+        display: block;
+        color: $colorBackground;
+        font-size: 14px;  
+    }
+    li:hover, li.active{
+        background-color: rgba(0, 0, 0, 0.3);
+	    transition: .4s;
+    }
+}
+.navLogo{
+	width: 150px;
+	margin: 0 40px;
+}
+.btn_menu{
+	margin-right: 30px;
+	font-size: 16px;
+	color:$colorBackground;
+	cursor: pointer;
+	display: none;
+}
+ul.show{
+	top: 65px;
+}
+
+.heroSection{
+	background-image: url(../assets/img/hero-home.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 580px;
+	color:$white;
+}
+
+.heroText{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding:150px;
+	gap: 24px;
+    h1{
+     font-size: 48px; 
+    }
+    p{
+        font-size: 18px; 
+    }
+   a{
+    background-color: $colorSecondary;
+	color: $white;
+	font-size: 16px;
+	padding: 10px 40px;
+	border-radius: 10px;
+	font-weight: 600;
+   }
+}
+
+.textSection{
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 60px;
+    div{
+        margin: 60px;
+    }
+    h1{
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 24px;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 32px; 
+    }
+    a{
+        background-color:$colorSecondary;
+        color:$white;
+        font-size: 16px;
+        padding: 10px 40px;
+        border-radius: 10px; 
+    }
+}
+.featureSection{
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr ;
+	color: white;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $colorPrimary;
+        padding: 30px;
+        margin: 40px;
+        width: 309px;
+        height: 319px;
+        border-radius: 20px; 
+    }
+    img{
+        width: 60px;
+        margin: 30px;  
+    }
+    p{
+        font-family: 16px;
+	    text-align: center;
+    }
+}
+
+.serviceSection{
+    h2{
+        display: flex;
+        justify-content: center;
+        font-size: 48px;
+        margin: 56px 0;  
+    }
+}
+.serviceBg{
+    background-image: url(../assets/img/image2-home.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 510px;
+	color: $white;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 24px;
+        position: absolute;
+        margin: 115px;
+        width: 430px;   
+    }
+    h3{
+        font-size: 32px; 
+    }
+    a{
+        background-color:$white;
+        color:$colorPrimary;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        width: 120px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center; 
+    }
+}
+
+.contactSection{
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 100px 0;
+    h1{
+        font-size: 48px;
+        font-weight: 600px;
+        margin: 0 32px;   
+    }
+    p{
+        font-size: 16px;
+	    font-weight: 400px;
+	    margin-bottom: 32px;
+    }
+}
+
+.formContact{
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 32px;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+    } 
+    label{
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 14px; 
+    } 
+    input{
+        background-color: none;
+	    border-radius: 10px;
+	    border: 1px solid $colorPrimary;
+	    width: 750px;
+	    height: 40px;
+	    margin-bottom: 20px;
+    }
+    textarea{
+        border-radius: 10px;
+	    border: 1px solid $colorPrimary;
+	    width: 750px;
+	    height: 100px;
+    }
+    a{
+        background-color: $colorSecondary;
+	    border-radius: 10px;
+	    border: none;
+	    color: white;
+	    font-size: 16px;
+	    padding: 8px 42px;
+	    width: 100px;
+	    font-weight: 600;
+	    display: flex;
+	    justify-content: center;
+        margin-top: 30px;
+    }
+}

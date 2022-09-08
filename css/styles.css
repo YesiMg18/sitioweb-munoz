@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url("../assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+body {
+  font-family: 'Poppins'; }
+
+footer {
+  background-color: #2E2F3B;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px; }
+
+.footerIcons img {
+  margin: 20px; }
+
+.menu {
+  background-color: white;
+  height: 75px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.menuItems {
+  display: flex;
+  list-style: none;
+  margin-right: 30px; }
+  .menuItems li {
+    border-radius: 5px;
+    margin: 0 5px; }
+  .menuItems a {
+    padding: 7px 13px;
+    text-decoration: none;
+    display: block;
+    color: #2E2F3B;
+    font-size: 14px; }
+  .menuItems li:hover, .menuItems li.active {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: .4s; }
+
+.navLogo {
+  width: 150px;
+  margin: 0 40px; }
+
+.btn_menu {
+  margin-right: 30px;
+  font-size: 16px;
+  color: #2E2F3B;
+  cursor: pointer;
+  display: none; }
+
+ul.show {
+  top: 65px; }
+
+.heroSection {
+  background-image: url(../assets/img/hero-home.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 580px;
+  color: white; }
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px;
+  gap: 24px; }
+  .heroText h1 {
+    font-size: 48px; }
+  .heroText p {
+    font-size: 18px; }
+  .heroText a {
+    background-color: #9B867B;
+    color: white;
+    font-size: 16px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-weight: 600; }
+
+.textSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 60px; }
+  .textSection div {
+    margin: 60px; }
+  .textSection h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 24px; }
+  .textSection p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 32px; }
+  .textSection a {
+    background-color: #9B867B;
+    color: white;
+    font-size: 16px;
+    padding: 10px 40px;
+    border-radius: 10px; }
+
+.featureSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: white; }
+  .featureSection div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #302E3C;
+    padding: 30px;
+    margin: 40px;
+    width: 309px;
+    height: 319px;
+    border-radius: 20px; }
+  .featureSection img {
+    width: 60px;
+    margin: 30px; }
+  .featureSection p {
+    font-family: 16px;
+    text-align: center; }
+
+.serviceSection h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+  margin: 56px 0; }
+
+.serviceBg {
+  background-image: url(../assets/img/image2-home.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 510px;
+  color: white; }
+  .serviceBg div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 24px;
+    position: absolute;
+    margin: 115px;
+    width: 430px; }
+  .serviceBg h3 {
+    font-size: 32px; }
+  .serviceBg a {
+    background-color: white;
+    color: #302E3C;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 120px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center; }
+
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0; }
+  .contactSection h1 {
+    font-size: 48px;
+    font-weight: 600px;
+    margin: 0 32px; }
+  .contactSection p {
+    font-size: 16px;
+    font-weight: 400px;
+    margin-bottom: 32px; }
+
+.formContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px; }
+  .formContact div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+  .formContact label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 14px; }
+  .formContact input {
+    background-color: none;
+    border-radius: 10px;
+    border: 1px solid #302E3C;
+    width: 750px;
+    height: 40px;
+    margin-bottom: 20px; }
+  .formContact textarea {
+    border-radius: 10px;
+    border: 1px solid #302E3C;
+    width: 750px;
+    height: 100px; }
+  .formContact a {
+    background-color: #9B867B;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 42px;
+    width: 100px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; }
