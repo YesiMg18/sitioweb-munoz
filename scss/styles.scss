@@ -1,6 +1,12 @@
 @import "colors";
 @import "fonts";
 
+.body{
+    a{
+        text-decoration: none;
+    }
+}
+
 footer{
 	background-color:$colorBackground;
 	color: $white;

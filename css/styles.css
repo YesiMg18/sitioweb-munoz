@@ -7,6 +7,9 @@
 body {
   font-family: 'Poppins'; }
 
+.body a {
+  text-decoration: none; }
+
 footer {
   background-color: #2E2F3B;
   color: white;
