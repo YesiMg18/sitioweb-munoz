@@ -7,63 +7,60 @@
 	<meta name="description" content="Diseño de muebles se especializa en llevar tus diseños personalizados a una realidad , brindamos un gran numero de opciones">
 	<meta name="keywords" content="diseños,personalizados , unicos, modernos, muebles, catálogo, experiencia, diseño industrial, minimalista, modernos ">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!--linkeo mi css-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="icon" type="image/ico" href="assets/img/favicon.ico" />
 	<title>Diseño de Muebles</title>
-	<script src="app.js" defer></script>
+	<script src="app.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 	<header>
 		<nav class="menu">	
 			<a href="#" class="navLogo"><img src="assets/img/logo-color.svg" alt="logo empresa"></a>
-			<ul class="menuItems">
+			<ul class="menuItems" id="menuItems">
 				<li><a href="pages/quienessomos.html">Quienes somos</a></li>
 				<li><a href="pages/servicio.html">Servicios</a></li>
 				<li><a href="pages/materiales.html">Materiales y Estilos</a></li>
 				<li><a href="pages/contacto.html">Contáctanos</a></li>
 			</ul>
-			<span class="btn_menu">
+			<span class="btn_menu" id="btn_menu">
 				<i class="fa fa-bars"></i>
 			</span>
-		</nav>
+		</nav>	
 	</header>
 	<main>
 		
 		<section class="heroSection">
 			<div class="heroText">
-				<h1>Diseño y tendencias de muebles</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus, lacus nec placerat dictum,
-					libero</p>
+				<h1 >Diseño y tendencias de muebles</h1>
+				<p>El diseño de muebles consiste en la creación de diseños para productos de mobiliario.</p>
 				<a href="pages/contacto.html"> Quiero más información</a>
 			</div>
 
 		</section>
 		<section class="textSection">
-			<div>
+			<div data-aos="fade-right">
 				<h1>¿Qué hacemos?<h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-							consectetur diam sollicitudin lorem lacinia, vitae vehicula nisl varius. Aliquam porttitor
-							eu est ut rhoncus. Proin in rhoncus lacus. Proin eu feugiat eros, vel rhoncus nibh. Nullam
-							sodales vel nisl ac aliquam. Praesent pulvinar cursus nulla nec imperdiet. Aliquam lacinia
-							rhoncus sagittis. Vestibulum mauris leo, congue at dictum vel, molestie ut sapien. Sed
-							dictum eros vel lacinia euismod.</p>
+						<p>Somos líderes en la industria mueblera desde hace 50 años. Nuestro servicio, honestidad y precios accesibles hacen de Diseño Muebles tu mejor opción para complementar tu hogar.Trabajamos con los mejores materiales y excelentes
+							diseños para lograr el acabado ideal que lucirá perfectamente
+							en cualquier ambiente productivo.</p>
 						<a href="pages/quienessomos.html">Ver más</a>
 			</div>
-			<img src="assets/img/image1-home.png">
+			<img data-aos="fade-left" src="assets/img/image1-home.png">
 		</section>
-		<section class="featureSection">
-			<div>
+		<section data-aos="fade-up" data-aos-duration="2000" class="featureSection">
+			<div >
 				<img src="assets/img/star.svg">
-				<p>Lorem ipsum dolor sit amet, consectetur</p>
+				<p>Entrevista con el cliente y visita al espacio para identificar necesidades</p>
 			</div>
 			<div>
 				<img src="assets/img/win.svg">
-				<p>Lorem ipsum dolor sit amet, consectetur</p>
+				<p>Tomar medidas y fotografías del espacio, conceptualización, look and feel</p>
 			</div>
 			<div>
 				<img src="assets/img/like.svg">
-				<p>Lorem ipsum dolor sit amet, consectetur</p>
+				<p>Revisión de diseños finales con el cliente y entrega de propuesta final</p>
 			</div>
 			
 		</section>
@@ -72,34 +69,9 @@
 			<div class="serviceBg">
 				<div>
 					<h3>Personalización de muebles</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu enim est. Suspendisse
-						consectetur lacus ut vulputate fermentum. Nulla facilisi.</p>
+					<p> Fabricamos mobiliario comprometida con el diseño de ideas, productos y soluciones integrales de acuerdo a las necesidades del cliente</p>
 					<a href="pages/servicio.html">Ver más</a>
 				</div>
-			</div>
-		</section>
-		<section class="contactSection">
-			<h1>Contáctanos</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu enim est. Suspendisse consectetur
-				lacus ut vulputate fermentum. </p>
-			<div class="formContact">
-				<div>
-					<label for="name">Nombre:</label>
-					<input type="text" name="name" id="name" placeholder="Tu nombre">
-				</div>
-				<div>
-					<label for="email">Email:</label>
-					<input type="email" name="email" id="email" placeholder="ejemplo@email.com">
-				</div>
-				<div>
-					<label for="tel">Teléfono:</label>
-					<input type="tel" name="tel" id="tel" placeholder="55555555">
-				</div>
-				<div>
-					<label>Mensaje:</label>
-					<textarea placeholder="Escribe tu mensaje" name="message" id="message"></textarea>
-				</div>
-				<a type="submit">Enviar</a>
 			</div>
 		</section>
 
@@ -117,19 +89,9 @@
 		<div>
 			<p>Copyright 2022 Sitio web</p>
 		</div>
-
 	</footer>
 	<script>
-					function myFunction() {
-			var x = document.getElementById("myTopnav");
-			if (x.className === "topnav") {
-				x.className += "responsive";
-			} else {
-				x.className = "topnav";
-			}
-		}
-	</script>
-	
+		AOS.init();
+	</script>	
 </body>
-
 </html>

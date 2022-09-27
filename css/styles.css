@@ -165,9 +165,8 @@ ul.show {
     background-color: #ffffff;
     color: #302E3C;
     font-size: 16px;
-    padding: 10px 20px;
+    padding: 10px 40px;
     border-radius: 10px;
-    width: 120px;
     font-weight: 600;
     display: flex;
     justify-content: center;
@@ -309,9 +308,8 @@ ul.show {
     background-color: #ffffff;
     color: #302E3C;
     font-size: 16px;
-    padding: 10px 20px;
+    padding: 10px 40px;
     border-radius: 10px;
-    width: 120px;
     font-weight: 600;
     display: flex;
     justify-content: center;
@@ -335,6 +333,75 @@ ul.show {
   .sectionProcess p {
     font-size: 16px;
     font-weight: 400; }
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto; }
+
+.mySlides {
+  display: none; }
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 90%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #9B867B;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none; }
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center; }
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; }
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.active, .dot:hover {
+  background-color: #717171; }
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
 
 .sectionGalery {
   margin: 90px;
@@ -475,11 +542,205 @@ ul.show {
       background-color: #ffffff;
       color: #302E3C;
       font-size: 16px;
-      padding: 10px 20px;
+      padding: 10px 40px;
       border-radius: 10px;
-      width: 120px;
       font-weight: 600;
       display: flex;
       justify-content: center;
       text-decoration: none;
       padding: 8px 42px; }
+
+/*Mediaqueries*/
+@media screen and (max-width: 952px) {
+  .navLogo {
+    width: 18px;
+    padding-left: 15px; }
+  .menuItems li a {
+    font-size: 16px; } }
+
+@media screen and (max-width: 858px) {
+  .menu {
+    height: 65px; }
+  .btn_menu {
+    display: inline-flex; }
+  .menuItems {
+    z-index: auto;
+    position: fixed;
+    width: 100vw;
+    height: calc(100% - 65px);
+    background: #302E3C;
+    top: -100vh;
+    text-align: center;
+    transition: all .4s;
+    flex-direction: column; }
+    .menuItems li {
+      margin: 30px 0 0 0;
+      line-height: 30px; }
+      .menuItems li a {
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: bold; }
+      .menuItems li a:hover {
+        color: #9B867B; }
+    .menuItems li:hover {
+      background: none; }
+  .navLogo {
+    width: 150px; } }
+
+@media screen and (max-width: 858px) and (orientation: landscape) {
+  .menuItems {
+    overflow: scroll;
+    height: calc(100% - 65px); }
+    .menuItems li {
+      margin: 5px 0 0 0; } }
+
+@media only screen and (max-width: 375px) {
+  .heroSection {
+    background-image: url(../assets/img/hero-home-mobile.png);
+    height: 680px; }
+  .heroText {
+    padding: 100px 16px;
+    text-align: center; }
+    .heroText h1 {
+      font-size: 32px; }
+  .textSection {
+    flex-direction: column;
+    margin: 16px; }
+    .textSection div {
+      margin: 40px 16px;
+      text-align: center; }
+    .textSection h1 {
+      font-size: 32px; }
+  .featureSection {
+    grid-template-columns: 1fr;
+    justify-items: center; }
+    .featureSection div {
+      padding: 16px;
+      margin: 16px 40px;
+      width: 250px;
+      height: 300px; }
+  .serviceSection h2 {
+    font-size: 32px; }
+  .serviceBg {
+    background-image: url(../assets/img/image2-home-mobile.png);
+    height: 580px; }
+    .serviceBg div {
+      text-align: center;
+      margin: 100px 16px;
+      width: auto;
+      align-items: center; }
+    .serviceBg h3 {
+      font-size: 32px; }
+  .contactSection {
+    margin: 60px 16px;
+    text-align: center; }
+    .contactSection h1 {
+      font-size: 32px;
+      margin-bottom: 12px; }
+  .formContact input {
+    width: 300px;
+    height: 40px; }
+  .formContact textarea {
+    width: 300px; }
+  footer {
+    flex-direction: column; }
+    footer div {
+      margin-bottom: 16px; }
+  .titlePage {
+    font-size: 32px;
+    margin: 32px 0; }
+  .sectionHistory {
+    flex-direction: column;
+    align-items: center; }
+    .sectionHistory div {
+      margin: 16px;
+      padding: 8px;
+      text-align: center; }
+    .sectionHistory h2 {
+      font-size: 24px; }
+    .sectionHistory img {
+      width: 90%; }
+  .textHistory {
+    margin: 16px;
+    padding: 16px;
+    text-align: center; }
+    .textHistory h2 {
+      font-size: 32px; }
+  .sectionPurpose {
+    flex-direction: column;
+    margin: 24px; }
+    .sectionPurpose div {
+      padding: 32px;
+      margin: 32px 0; }
+    .sectionPurpose h3 {
+      font-size: 28px; }
+  .sectionTeam {
+    margin: 60px 24px; }
+    .sectionTeam h2 {
+      font-size: 32px;
+      margin-bottom: 56px; }
+  .infoTeam {
+    grid-template-columns: repeat(2, 1fr); }
+    .infoTeam div {
+      margin-bottom: 32px; }
+    .infoTeam img {
+      border-radius: 70px;
+      width: 110px; }
+    .infoTeam h4 {
+      font-size: 14px; }
+    .infoTeam p {
+      font-size: 12px;
+      font-weight: 400; }
+  .sectionDesign {
+    background-image: url(../assets/img/bg-service-mobile.png);
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 480px; }
+  .textDesign {
+    margin: 70px 32px;
+    text-align: center; }
+    .textDesign h2 {
+      font-size: 32px; }
+    .textDesign p {
+      font-size: 16px;
+      margin-bottom: 32px; }
+  .sectionProcess {
+    flex-direction: column;
+    margin: 40px 16px; }
+    .sectionProcess div {
+      padding: 24px;
+      margin: 18px 8px;
+      text-align: center; }
+    .sectionProcess h2 {
+      font-size: 32px; }
+    .sectionProcess img {
+      width: 375px; }
+  .sectionGalery {
+    margin: 16px; }
+  .materialsCards {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 16px; }
+    .materialsCards div {
+      margin: 12px;
+      padding: 12px;
+      width: 85%; }
+  .contactPage {
+    background-image: url(../assets/img/bg-contact-mobile.jpg);
+    grid-template-columns: 1fr;
+    margin: 16px; }
+  .contactText {
+    margin: 32px;
+    text-align: center;
+    width: 38%; }
+    .contactText h1 {
+      font-size: 32px;
+      margin-bottom: 16px; }
+  .contactForm {
+    margin: 16px;
+    width: 300px; }
+    .contactForm input {
+      width: 120px;
+      height: 40px;
+      margin-bottom: 20px;
+      padding: 5px 10px; } }
