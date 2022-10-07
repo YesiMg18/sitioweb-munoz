@@ -1,4 +1,3 @@
-@import url(animate.css);
 @font-face {
   font-family: 'Poppins';
   src: url("../assets/fonts/Poppins-Regular.ttf") format("truetype");
@@ -531,7 +530,7 @@ ul.show {
     .menuItems li {
       margin: 5px 0 0 0; } }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
   .heroSection {
     background-image: url(../assets/img/hero-home-mobile.png);
     height: 680px; }
